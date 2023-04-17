@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="23.761" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Login" name="User login with the Email and password" time="15.055">
+<system-out><![CDATA[
+Given user hover on Account and List........................................passed
+When user click on SignIN...................................................passed
+And user Enter the Email "mai.rostom2@gmail.com"............................passed
+And user click continue.....................................................passed
+And user write the password"123456789mM"....................................passed
+Then user click signIn......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter and Sort All Video Games" name="user select all video games and filter and sort them" time="8.478">
+<failure type="io.cucumber.core.exception.CucumberException" message="Step [user select FreeShipping Filter and add the filter of condition {string}] is defined with 0 parameters at 'org.example.stepDefinitions.D02_Filter.userSelectFreeShippingFilterAndAddTheFilterOfConditionNew()'.
+However, the gherkin step has 1 arguments:
+ * 'new'
+Step text: user select FreeShipping Filter and add the filter of condition 'new'">
+<![CDATA[io.cucumber.core.exception.CucumberException: Step [user select FreeShipping Filter and add the filter of condition {string}] is defined with 0 parameters at 'org.example.stepDefinitions.D02_Filter.userSelectFreeShippingFilterAndAddTheFilterOfConditionNew()'.
+However, the gherkin step has 1 arguments:
+ * 'new'
+Step text: user select FreeShipping Filter and add the filter of condition 'new'
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user clicks on the 'All' button in the navigation bar.................passed
+And user select See All.....................................................passed
+And user select Video games then select All video games.....................passed
+When user select FreeShipping Filter and add the filter of condition 'new'..failed
+Then user sort by price from High to Low....................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
